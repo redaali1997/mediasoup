@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video {
+            background-color: black;
+            display: block;
+            margin: 0 10px;
+        }
+
+        div {
+            background-color: chocolate;
+            margin: 10px;
+            padding: 5px;
+            display: flex;
+        }
+
+        button {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="display: flex; flex-direction: column;">
+            <video id="localVideo" playsinline autoplay width="400"></video>
+            <button type="button" id="btnLocalVideo">1. Get Local Video</button>
+        </div>
+        
+        <div>
+            <video id="remoteVideo" playsinline autoplay width="400"></video>
+        </div>
+    </div>
+
+    <div>
+        <button type="button">2. Get Rtp Capabilites</button>
+        <button type="button">3. Create Device</button>
+    </div>
+
+    <div>
+        <div>
+            <button type="button">4. Create Send Transport</button>
+            <button type="button">5. Connect send transport & produce</button>
+        </div>
+        <div>
+            <button type="button">6. Create recv transport</button>
+            <button type="button">7. Connect recv transport && consume</button>
+        </div>
+    </div>
+
+    <script src="./bundle.js"></script>
+</body>
+</html>
